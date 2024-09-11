@@ -509,7 +509,7 @@ fn create_os_instance(connector: MemConnector) -> anyhow::Result<MemOsImpl> {
 fn find_game_process(mem_os: &mut MemOsImpl) -> Option<MemProcImpl<'_>> {
     tracing::info!(parent: None, "{}", s!("Searching for apex process..."));
     mem_os
-        .open_proc(s!("r5apex.exe").to_string())
+        .open_proc(s!("r5apex_dx12.exe").to_string())
         .map(Some)
         .unwrap_or_else(|e| {
             tracing::trace!(?e, "{}", s!("open_proc"));
