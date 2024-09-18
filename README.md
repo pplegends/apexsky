@@ -241,7 +241,7 @@ sudo pacman -S clang protobuf libusb zstd libx11 pkgconf alsa-lib wayland-protoc
 **Build:**
 
 ```shell
-git clone --recurse https://github.com/chettoy/apexsky
+git clone --recurse https://github.com/pplegends/apexsky
 cd apexsky
 git checkout next
 git submodule update --init --recursive
